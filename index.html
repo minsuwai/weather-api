@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Search Bar -->
+        <div id="searchBar">
+            <input type="text" id="searchBarInput" placeholder="Search by City">
+            <button onclick="getWeather()" id="searchIcon"><i class="fa-brands fa-searchengin"></i></button>
+        </div>
+
+        <!-- Date & City -->
+        <div id="indo">
+            <p id="date"></p>
+            <h3 id="city"></h3>
+        </div>
+
+        <!-- Weather Image -->
+        <div id="tempImg"></div>
+
+        <!-- Description -->
+        <div id="description"></div>
+
+        <!-- Temp -->
+        <div id="temp"></div>
+
+        <!-- Extra Info -->
+        <div id="extraInfo">
+            <div class="col">
+                <div id="info">
+                    <h5>Highs</h5>
+                    <p id="tempMax"></p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="info">
+                    <h5>Lows</h5>
+                    <p id="tempMin"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="app.js"></script>
+
+</html>
